@@ -11,5 +11,8 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ListView2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\ViewModelBase.cs" />
   </ItemGroup>
 </Project>

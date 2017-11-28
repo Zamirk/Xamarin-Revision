@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Xamarin.Forms;
+using Xamarin_Experiments.MVVMTests.Alpha;
 
 namespace Xamarin_Experiments
 {
@@ -15,7 +16,7 @@ namespace Xamarin_Experiments
         {
             public App()
             {
-                MainPage = new NavigationPage(new ListView2());
+                MainPage = new NavigationPage(new MathView());
             }
 
             protected override void OnStart()

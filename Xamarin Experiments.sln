@@ -11,11 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin_Experiments.iOS", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin_Experiments.UWP", "Xamarin Experiments\Xamarin_Experiments.UWP\Xamarin_Experiments.UWP.csproj", "{F2796EA4-3632-474A-A828-46B01E9E4528}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{1A5C1B35-AC9B-41B2-A8D7-09BBD1AC7537}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xamarin Experiments\Xamarin_Experiments\Xamarin_Experiments.projitems*{6fe816df-fcff-4ce7-8133-f8fae5c2a40f}*SharedItemsImports = 4
 		Xamarin Experiments\Xamarin_Experiments\Xamarin_Experiments.projitems*{848ec1fa-58ce-46a3-966a-f2d31007da8b}*SharedItemsImports = 4
 		Xamarin Experiments\Xamarin_Experiments\Xamarin_Experiments.projitems*{8dda549d-acfa-4e1e-b2b5-deceb3f99621}*SharedItemsImports = 13
+		Xamarin Experiments\Xamarin_Experiments\Xamarin_Experiments.projitems*{f2796ea4-3632-474a-a828-46b01e9e4528}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -211,6 +214,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FE816DF-FCFF-4CE7-8133-F8FAE5C2A40F} = {1A5C1B35-AC9B-41B2-A8D7-09BBD1AC7537}
+		{848EC1FA-58CE-46A3-966A-F2D31007DA8B} = {1A5C1B35-AC9B-41B2-A8D7-09BBD1AC7537}
+		{F2796EA4-3632-474A-A828-46B01E9E4528} = {1A5C1B35-AC9B-41B2-A8D7-09BBD1AC7537}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73A764A5-2C41-4019-B7E0-8710ABFFF003}
