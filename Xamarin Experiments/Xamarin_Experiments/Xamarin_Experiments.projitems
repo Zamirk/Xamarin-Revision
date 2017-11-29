@@ -9,8 +9,9 @@
     <Import_RootNamespace>Xamarin_Experiments</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonB.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ListView2.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\ViewModelBase.cs" />

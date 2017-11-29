@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 using Xamarin_Experiments.MVVMTests.Alpha;
+using Xamarin_Experiments.Animations;
 
 namespace Xamarin_Experiments
 {
@@ -16,7 +17,7 @@ namespace Xamarin_Experiments
         {
             public App()
             {
-                MainPage = new NavigationPage(new MathView());
+                MainPage = new NavigationPage(new ButtonB());
             }
 
             protected override void OnStart()
