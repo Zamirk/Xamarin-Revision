@@ -10,6 +10,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonF.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonG.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonD.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonC.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonB.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathView.cs" />

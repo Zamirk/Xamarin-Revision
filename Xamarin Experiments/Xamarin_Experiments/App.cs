@@ -17,7 +17,7 @@ namespace Xamarin_Experiments
         {
             public App()
             {
-                MainPage = new NavigationPage(new ButtonB());
+                MainPage = new NavigationPage(new ButtonF());
             }
 
             protected override void OnStart()

@@ -11,14 +11,6 @@ namespace Xamarin_Experiments.Animations
 
         public ButtonA()
 		{
-            myButton = new Button()
-            {
-                FontSize = 72,
-                Text = "Text",
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-            };
-
             myButton.Clicked += OnButtonClicked;
 
             ContentView myView = new ContentView()
