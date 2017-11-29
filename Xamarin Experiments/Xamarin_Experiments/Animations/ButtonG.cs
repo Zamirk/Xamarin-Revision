@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
@@ -8,37 +9,60 @@ namespace Xamarin_Experiments.Animations
 {
     public class ButtonG : ContentPage
     {
-        private Button myButton;
+        private Label myLabel1;
+        private Label myLabel2;
+        private Grid myLayout;
 
         public ButtonG()
         {
-            myButton = new Button()
+            SizeChanged += OnPageSizeChanged;
+            myLayout = new Grid();
+
+            myLabel1 = new Label()
             {
-                FontSize = 72,
-                Text = "Text",
+                Text = "More",
                 HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center, 
+                FontSize = 72,
+                TextColor = Color.Red
             };
 
-            myButton.Clicked += OnButtonClicked;
 
-            ContentView myView = new ContentView()
+            myLabel2 = new Label()
             {
-                HorizontalOptions = LayoutOptions.CenterAndExpand,
-                VerticalOptions = LayoutOptions.CenterAndExpand
+                Text = "Code",
+                HorizontalOptions = LayoutOptions.Center,
+                FontSize = 72,
+                TextColor = Color.Blue
             };
 
-            myView.Content = myButton;
-            Content = myView;
+            myLayout.Children.Add(myLabel1);
+            myLayout.Children.Add(myLabel2);
+
+            Content = myLayout;
+            AnimationLoop();
         }
 
-        async void OnButtonClicked(object sender, EventArgs args)
+        void OnPageSizeChanged(object sender, EventArgs args)
         {
-            myButton.Clicked -= OnButtonClicked;
-            myButton.Rotation = 0;
-            myButton.RotateTo(360, 2000);
-            await myButton.ScaleTo(5, 1000);
-            await myButton.ScaleTo(1, 1000);
-            myButton.Clicked += OnButtonClicked;        }
+            if (Width > 0)
+            {
+                double fontSize = 0.3 * Width;
+                myLabel1.FontSize = fontSize;
+                myLabel2.FontSize = fontSize;
+            }
+        }
+
+        async void AnimationLoop()
+        {
+            while (true)
+            {
+                await Task.WhenAll(myLabel1.FadeTo(0, 1000),
+                myLabel2.FadeTo(1, 1000));
+                await Task.WhenAll(myLabel1.FadeTo(1, 1000),
+                myLabel2.FadeTo(0, 1000));
+            }
+        }
+
+
     }
 }
