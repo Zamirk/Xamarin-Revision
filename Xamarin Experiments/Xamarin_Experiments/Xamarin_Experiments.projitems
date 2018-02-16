@@ -22,6 +22,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Beta\PowersViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Beta\PowersView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\ViewModelBase.cs" />
   </ItemGroup>
 </Project>

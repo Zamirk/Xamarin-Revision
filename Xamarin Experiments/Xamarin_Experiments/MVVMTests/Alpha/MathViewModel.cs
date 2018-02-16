@@ -46,6 +46,7 @@ namespace Xamarin_Experiments.MVVMTests.Alpha
             get { return product; }
         }
 
+        //Maths logic
         void UpdateProduct()
         {
             Product = Multiplicand * Multiplier;

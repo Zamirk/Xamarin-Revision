@@ -17,7 +17,7 @@ namespace Xamarin_Experiments
         {
             public App()
             {
-                MainPage = new NavigationPage(new Vortex());
+                MainPage = new NavigationPage(new PowersView());
             }
 
             protected override void OnStart()
