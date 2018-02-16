@@ -18,7 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonD.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonC.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonB.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\Vortex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vortex.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DigitalClock.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FileIO\IFileHelper.cs" />

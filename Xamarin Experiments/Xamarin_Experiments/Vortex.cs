@@ -5,17 +5,13 @@ using System.Threading.Tasks;
 
 namespace Xamarin_Experiments.Animations
 {
-    /* 16/02/18
-     * Just a fun GUI Vortex
-     */ 
-
-    class Vortex : ContentPage
+    class SpinningVortex : ContentPage
     {
         private AbsoluteLayout myLayout;
         const int numSpokes = 24;
         BoxView[] boxViews = new BoxView[numSpokes];
 
-        public Vortex()
+        public SpinningVortex()
         {
             myLayout = new AbsoluteLayout();
             myLayout.HorizontalOptions = LayoutOptions.Center;
@@ -72,11 +68,10 @@ namespace Xamarin_Experiments.Animations
         void AnimationLoop
          ()
         {
-            // Keep still for 3 seconds.
             await Task.Delay(3000);
-            // Rotate the configuration of spokes 3 times.
             uint count = 3;
             await myLayout.RotateTo(360 * count, 3000 * count);
+
             // Prepare for creating Task objects.
             List<Task<bool>> taskList = new List<Task<bool>>(numSpokes + 1);
             while (true)
@@ -86,12 +81,13 @@ namespace Xamarin_Experiments.Animations
                     // Task to rotate each spoke.
                     taskList.Add(boxView.RelRotateTo(360, 3000));
                 }
+
                 // Task to rotate the whole configuration.
                 taskList.Add(myLayout.RelRotateTo(360, 3000));
 
                 // Run all the animations; continue in 3 seconds.
                 await Task.WhenAll(taskList);
-                // Clear the List.
+
                 taskList.Clear();
             }
         }
