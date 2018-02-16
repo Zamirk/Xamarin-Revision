@@ -6,10 +6,6 @@ namespace Xamarin_Experiments.MVVMTests.Alpha
     {
         double multiplicand, multiplier, product;
 
-        public MathViewModel()
-        {
-
-        }
         public double Multiplicand
         {
             set

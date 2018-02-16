@@ -5,7 +5,13 @@ using Xamarin.Forms;
 
 namespace Xamarin_Experiments
 {
-    class PowersView: ContentPage
+    /*
+     * • Maths application 
+     * • 2 Buttons, a number with a power and result
+     * • Buttons allow you to increase or decrease the power
+     */
+
+    class PowersView : ContentPage
     {
         public PowersView()
         {

@@ -5,6 +5,11 @@ using Xamarin.Forms;
 
 namespace Xamarin_Experiments.MVVMTests.Alpha
 {
+    /*
+     * • Maths application
+     * • 2 Sliders and a result
+     * • Changing the sliders allows you to multiply various numbers together
+     */
     class MathView : ContentPage
     {
         public MathView()

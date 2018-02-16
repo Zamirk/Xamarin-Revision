@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 namespace Xamarin_Experiments.Animations
 {
+    /* 16/02/18
+     * Just a fun GUI Vortex
+     */ 
+
     class Vortex : ContentPage
     {
         private AbsoluteLayout myLayout;
@@ -32,7 +36,6 @@ namespace Xamarin_Experiments.Animations
                 myLayout.Children.Add(boxView);
             }
             AnimationLoop();
-
         }
 
         void OnPageSizeChanged(object sender, EventArgs args)
@@ -41,6 +44,7 @@ namespace Xamarin_Experiments.Animations
             double dimension = Math.Min(this.Width, this.Height);
             myLayout.WidthRequest = dimension;
             myLayout.HeightRequest = dimension;
+
             // Find the center and a size for the BoxView.
             Point center = new Point(dimension / 2, dimension / 2);
             Size boxViewSize = new Size(dimension / 2, 3);
@@ -51,13 +55,14 @@ namespace Xamarin_Experiments.Animations
                 double radians = Math.PI * degrees / 180;
 
                 // Find the point of the center of each BoxView spoke.
-                Point boxViewCenter =
-                 new Point(center.X + boxViewSize.Width / 2 * Math.Cos(radians),
+                Point boxViewCenter = new Point(center.X + boxViewSize.Width / 2 * Math.Cos(radians),
                   center.Y + boxViewSize.Width / 2 * Math.Sin(radians));
+
                 // Find the upper-left corner of the BoxView and position it.
                 Point boxViewOrigin = boxViewCenter - boxViewSize * 0.5;
                 AbsoluteLayout.SetLayoutBounds(boxViews[i],
                  new Rectangle(boxViewOrigin, boxViewSize));
+
                 // Rotate the BoxView around its center.
                 boxViews[i].Rotation = degrees;
             }

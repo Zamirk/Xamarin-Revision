@@ -6,7 +6,12 @@ namespace Xamarin_Experiments
 {
     class DigitalClock : ContentPage
     {
-        //A simple clock app that displays the current time
+        /*
+         * • A simple clock app
+         * • Displays the current time
+         * • Time moves arround the screen every second
+         */
+
         Random random = new Random();
         Label myLabel;
 
@@ -36,7 +41,7 @@ namespace Xamarin_Experiments
                     random.NextDouble(),
                     AbsoluteLayout.AutoSize,
                     AbsoluteLayout.AutoSize));
-                await Task.Delay(250);
+                await Task.Delay(1000);
             }
         }
     }
