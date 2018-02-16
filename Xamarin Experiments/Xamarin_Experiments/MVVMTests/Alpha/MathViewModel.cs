@@ -1,18 +1,10 @@
 ﻿using RAT.MvvmTests.Xamarin_Experiments.MVVMTests.Alpha;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
 
 namespace Xamarin_Experiments.MVVMTests.Alpha
 {
     class MathViewModel : ViewModelBase
     {
         double multiplicand, multiplier, product;
-
 
         public MathViewModel()
         {
@@ -60,3 +52,4 @@ namespace Xamarin_Experiments.MVVMTests.Alpha
         }
     }
 }
+ 
