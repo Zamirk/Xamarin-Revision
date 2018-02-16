@@ -4,13 +4,13 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace Xamarin_Experiments.Animations
+namespace Xamarin
 {
-    public class ButtonB : ContentPage
+    public class ButtonD : ContentPage
     {
         private Button myButton;
 
-        public ButtonB()
+        public ButtonD()
         {
             myButton = new Button()
             {
@@ -35,10 +35,9 @@ namespace Xamarin_Experiments.Animations
         async void OnButtonClicked(object sender, EventArgs args)
         {
             myButton.Clicked -= OnButtonClicked;
-            myButton.Rotation = 0;
-            myButton.RotateTo(360, 2000);
-            await myButton.ScaleTo(5, 1000);
-            await myButton.ScaleTo(1, 1000);
+            await myButton.RotateTo(90, 250, Easing.SinOut);
+            await myButton.RotateTo(-90, 500, Easing.SinInOut);
+            await myButton.RotateTo(0, 250, Easing.SinIn);
             myButton.Clicked += OnButtonClicked;        }
     }
 }

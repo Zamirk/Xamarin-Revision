@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Xamarin_Experiments.Animations
+namespace Xamarin
 {
     public class ButtonF : ContentPage
     {

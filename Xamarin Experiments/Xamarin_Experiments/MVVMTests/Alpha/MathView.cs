@@ -10,7 +10,7 @@ namespace Xamarin_Experiments.MVVMTests.Alpha
         public MathView()
         {
             MathViewModel myViewModel = new MathViewModel();
-		    BindingContext = myViewModel;
+            BindingContext = myViewModel;
 
             StackLayout myStackLayout = new StackLayout() { VerticalOptions = LayoutOptions.StartAndExpand };
 
@@ -33,6 +33,6 @@ namespace Xamarin_Experiments.MVVMTests.Alpha
             myLabel.SetBinding(Label.TextProperty, "Product");
 
             Content = myStackLayout;
-		}
+        }
     }
 }

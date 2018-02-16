@@ -17,7 +17,7 @@ namespace Xamarin_Experiments
         {
             public App()
             {
-                MainPage = new NavigationPage(new PowersView());
+                MainPage = new NavigationPage(new DigitalClock());
             }
 
             protected override void OnStart()

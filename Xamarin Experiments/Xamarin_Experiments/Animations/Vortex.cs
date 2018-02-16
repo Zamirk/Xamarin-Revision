@@ -52,20 +52,20 @@ namespace Xamarin_Experiments.Animations
 
                 // Find the point of the center of each BoxView spoke.
                 Point boxViewCenter =
-                    new Point(center.X + boxViewSize.Width / 2 * Math.Cos(radians),
-                        center.Y + boxViewSize.Width / 2 * Math.Sin(radians));
+                 new Point(center.X + boxViewSize.Width / 2 * Math.Cos(radians),
+                  center.Y + boxViewSize.Width / 2 * Math.Sin(radians));
                 // Find the upper-left corner of the BoxView and position it.
                 Point boxViewOrigin = boxViewCenter - boxViewSize * 0.5;
                 AbsoluteLayout.SetLayoutBounds(boxViews[i],
-                    new Rectangle(boxViewOrigin, boxViewSize));
+                 new Rectangle(boxViewOrigin, boxViewSize));
                 // Rotate the BoxView around its center.
                 boxViews[i].Rotation = degrees;
             }
         }
 
         async
-            void AnimationLoop
-            ()
+        void AnimationLoop
+         ()
         {
             // Keep still for 3 seconds.
             await Task.Delay(3000);

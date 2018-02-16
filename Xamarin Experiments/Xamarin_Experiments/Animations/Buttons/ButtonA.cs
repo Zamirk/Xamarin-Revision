@@ -8,7 +8,7 @@ using Xamarin.Forms;
  */
 
 
-namespace Xamarin_Experiments.Animations
+namespace Xamarin
 {
 	public class ButtonA : ContentPage
 	{

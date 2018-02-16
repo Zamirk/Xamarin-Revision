@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Xamarin_Experiments.Animations
+namespace Xamarin
 {
-    public class ButtonC : ContentPage
+    public class ButtonB : ContentPage
     {
         private Button myButton;
 
-        public ButtonC()
+        public ButtonB()
         {
             myButton = new Button()
             {
@@ -37,11 +36,8 @@ namespace Xamarin_Experiments.Animations
         {
             myButton.Clicked -= OnButtonClicked;
             myButton.Rotation = 0;
-            await Task.WhenAny<bool>
-            (
-            myButton.RotateTo(360, 2000),
-            myButton.ScaleTo(5, 1000)
-            );
+            myButton.RotateTo(360, 2000);
+            await myButton.ScaleTo(5, 1000);
             await myButton.ScaleTo(1, 1000);
             myButton.Clicked += OnButtonClicked;        }
     }

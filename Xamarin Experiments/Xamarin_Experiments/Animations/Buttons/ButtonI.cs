@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using Xamarin.Forms;
 
-namespace Xamarin_Experiments.Animations
+namespace Xamarin
 {
     public class ButtonI : ContentPage
     {

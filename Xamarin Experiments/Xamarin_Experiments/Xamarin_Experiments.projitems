@@ -9,21 +9,27 @@
     <Import_RootNamespace>Xamarin_Experiments</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonA.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonF.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonI.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonH.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonG.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonE.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonD.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonC.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Animations\ButtonB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonF.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonH.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonG.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonD.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonC.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Animations\Buttons\ButtonB.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Animations\Vortex.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DigitalClock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileIO\IFileHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Alpha\MathViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Beta\PowersViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\Beta\PowersView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MVVMTests\ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Animations\Buttons\" />
+    <Folder Include="$(MSBuildThisFileDirectory)MVVMTests\Gamma\" />
   </ItemGroup>
 </Project>
